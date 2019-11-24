@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="me.oz.pushstream">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 申明应用需要用到相机 -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <!-- 申明应用需要用到自动对焦 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 申请相机使用权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 申明录音权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 申明网络权限 -->
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
