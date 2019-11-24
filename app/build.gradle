@@ -25,7 +25,7 @@ android {
 
     sourceSets {
         main {
-            jniLibs.srcDirs "ffmpeg"
+            jniLibs.srcDirs "ffmpeg", "opencv/staticlibs", "opencv/3rdparty"
         }
     }
 
